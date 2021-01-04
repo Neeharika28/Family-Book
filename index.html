@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Family Book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p><u>My Family Book</u></p>
+    <img src="Cover.jpg" id="image" />
+    <br />
+    <h2 id="name"></h2>
+    <br />
+    <button id="Next" onclick="next()">Next</button>
+  </body>
+
+  <script>
+    var book = [
+      "Me",
+      "Mom",
+      "Dad",
+      "Brother",
+      "Sister",
+      "Grand Mother",
+      "Grand Father",
+    ];
+    var images = [
+      "Me.jpg",
+      "Mom.png",
+      "Dad.jpg",
+      "Sister.jpg",
+      "Brother.jpg",
+      "Grand Mother.jpg",
+      "Grand Father.png",
+    ];
+    var index = 0;
+
+    function next() {
+      document.getElementById("name").innerHTML = book[index];
+      document.getElementById("image").src = images[index];
+      index++;
+      if (index == 8) {
+        index = 0;
+      }
+    }
+  </script>
+</html>

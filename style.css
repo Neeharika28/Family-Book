@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+img {
+  width: 250px;
+  height: 350px;
+}
+p {
+  font-size: 45px;
+  font-variant: small-caps;
+}
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
